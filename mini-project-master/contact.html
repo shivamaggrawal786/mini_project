@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <style>
+        body{
+            background-color:  rgb(23, 23, 36);
+        }
+        .container{
+            /* max-width: 100px; */
+            width: 70vw;
+            margin: 10px auto;
+            margin-left: 15%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .card{
+            position: relative;
+            margin: 20px 0;
+            width: 300px;
+            height: 400px;
+            background: #ffffff;
+            transform-style: preserve-3d;
+            transform: perspective(2000px);
+            transition: 2s;
+            box-shadow: inset 300px 0 50px rgba(255, 71, 4, 0.753);
+            /* box-shadow: 5px 0 20px red; */
+        }
+        .card:hover{
+            z-index: 1000;
+            transform: perspective(2000px) rotate(-10deg);
+            box-shadow: inset 300px 0 50px rgba(0,0,0,.5);
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .imgbox{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            transform-origin: left;
+            z-index: 1;
+            transition: 1s;
+        }
+        .card:hover .imgbox{
+            transform: rotateY(-135deg);
+        }
+        .card .details{
+            position: absolute;
+            top: 0;
+            left: 0;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgbox">
+                <img src="contact-us images/arvind.jpg" alt="">
+            </div>
+            <div class="details">
+                <h1>Arvind Tomar</h1>
+                <h2>front-End Developer</h2>
+                <p>Persuing Btech(CSE) III year at GLA University <br>
+                </p>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="contact-us images/chirag.jpg" alt="">
+            </div>
+            <div class="details">
+                <h1>Chirag Singh</h1>
+                <h2>front-End Developer</h2>
+                <p>Persuing Btech(CSE) III year at GLA University <br>
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="contact-us images/Esha.jpeg" alt="">
+            </div>
+            <div class="details">
+                <h1>Esha</h1>
+                <h2>front-End Developer</h2>
+                <p>Persuing Btech(CSE) III year at GLA University <br>
+                </p>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="contact-us images/keshav.jpg" alt="">
+            </div>
+            <div class="details">
+                <h1>Keshav Bansal</h1>
+                <h2>Back-End Developer</h2>
+                <p>Persuing Btech(CSE) III year at GLA University <br>
+                </p>
+                
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgbox">
+                <img src="contact-us images/shivam.jpg" alt="">
+            </div>
+            <div class="details">
+                <h1>Shivam</h1>
+                <h2>Back-End Developer</h2>
+                <p>Persuing Btech(CSE) III year at GLA University <br>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
